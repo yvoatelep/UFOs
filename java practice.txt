@@ -1,0 +1,108 @@
+// Takes two numbers and adds them
+function addition(a, b) {
+  return a + b;
+}
+undefined
+console.log(additiona(4,5));
+VM359:1 Uncaught ReferenceError: additiona is not defined
+    at <anonymous>:1:9
+(anonymous) @ VM359:1
+console.log(addition(4, 5));
+VM446:1 9
+undefined
+    console.log(addition(12,43))
+VM552:1 55
+undefined
+addition(13,16)
+29
+// Functions can call other functions
+function doubleAddition(c, d) {
+  var total = addition(c, d) * 2;
+  return total;
+}
+undefined
+console.log(doubleAddition(4,5));
+VM745:1 18
+undefined
+doubleAddition(4,5)
+18
+doubleAddition(33,66)
+198
+
+Console was cleared
+undefined
+function square (num) {
+    return num**2
+}
+undefined
+console.log square (2)
+VM1094:1 Uncaught SyntaxError: Unexpected identifier
+console.log (square(2))
+VM1203:1 4
+undefined
+square(2)
+4
+square(3)
+9
+let square = (num) ==> num**2
+VM1339:1 Uncaught SyntaxError: Unexpected token '>'
+let square =(num) ==> num**2;
+VM1495:1 Uncaught SyntaxError: Unexpected token '>'
+console.log square (2)
+VM1535:1 Uncaught SyntaxError: Unexpected identifier
+let square =(num) => num**2
+VM1635:1 Uncaught SyntaxError: Identifier 'square' has already been declared
+let squareb =(num) => num**2
+undefined
+console.log (squareb (9))
+VM1810:1 81
+undefined
+squareb(9)
+81
+additionb (a,b) => a+b
+VM1933:1 Uncaught SyntaxError: Malformed arrow function parameter list
+additionb (,b) => a + b;
+VM2002:1 Uncaught SyntaxError: Unexpected token ','
+addition (a,b) => a + b;
+VM2076:1 Uncaught SyntaxError: Malformed arrow function parameter list
+addition = (a, b) => a + b;
+(a, b) => a + b
+addition (4,6)
+10
+doubleAddition(c,d)=> addition(c,d)*2;
+VM2241:1 Uncaught SyntaxError: Malformed arrow function parameter list
+doubleAddition(c,d)=> addition(c, d) * 2;
+VM2318:1 Uncaught SyntaxError: Malformed arrow function parameter list
+=> addition(c, d) * 2;=> addition(c, d) * 2;
+VM2324:1 Uncaught SyntaxError: Unexpected token '=>'
+addition(c, d) * 2;=> addition(c, d) * 2;
+VM2328:1 Uncaught SyntaxError: Unexpected token '=>'
+let friends = ["Sarah", "Greg", "Cindy", "Jeff"];
+undefined
+function listLoop(userList) {
+   for (var i = 0; i < userList.length; i++) {
+     console.log(userList[i]);
+   }
+}
+
+undefined
+console.log (userlist)
+VM2438:1 Uncaught ReferenceError: userlist is not defined
+    at <anonymous>:1:14
+(anonymous) @ VM2438:1
+console.log(listLoop)
+VM2498:1 ƒ listLoop(userList) {
+   for (var i = 0; i < userList.length; i++) {
+     console.log(userList[i]);
+   }
+}
+undefined
+console.log(userList[friends])
+VM2845:1 Uncaught ReferenceError: userList is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM2845:1
+listLoop(friends)
+VM2348:3 Sarah
+VM2348:3 Greg
+VM2348:3 Cindy
+VM2348:3 Jeff
