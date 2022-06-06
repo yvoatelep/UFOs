@@ -5,23 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFO Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark"></body>>
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
-        </nav>
+        </nav class="navbar navbar-dark bg-dark navbar-expand-lg"></nav>>
     </div>   
-</body>
-</html><link
-rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-crossorigin="anonymous"
-/><link rel="stylesheet" href="static/css/style.css">
+
 <div class="jumbotron">
-    <h1>The Truth Is Out There</h1>
-  </div>
+  <h1 class="display-4">The Truth is Out There</h1>
+</div>
   <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
@@ -60,26 +57,40 @@ crossorigin="anonymous"
 
 </div>
 <form>
-    <p>Filter Search</p>
-  </form>
 
-  <ul class="list-group">
+  <p>Filter Search</p>
+  <ul class = "list-group">
+    <li>
+    </li class = "list-group-item bg-dark">
+      <label for="date">Enter Date</label>
+      <input type="text" placeholder="1/10/2010" id="datetime" />
+      <li>
+      </li class = "list-group-item bg-dark">
+      <label for="City">Enter City</label>
+      <input type="text" placeholder="Benton" id="city" />
+    </li>
+      <label for="state">Enter State</label>
+      <input type="text" placeholder="AR" id="state" />
+  </li>
+      <label for="country">Enter Country</label>
+      <input type="text" placeholder="US" id="country" />
+    </li>
+  </li>
+      <label for="shape">Enter Shape</label>
+      <input type="text" placeholder="circle" id="shape" />
+    </li>
+   
 
-</ul>
-<li class="list-group-item">
+  </ul>
+  
+ </form>
 
-</li>
-<li class="list-group-item">
-
-</li>
-<label for="date">Enter Date</label>
-
-<input type="text" placeholder="1/10/2010" id="datetime" />
-
-<button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
 <div class="col-md-9">
+
     <table class="table table-striped">
+
       <thead>
+
         <tr>
           <th>Date</th>
           <th>City</th>
@@ -88,8 +99,18 @@ crossorigin="anonymous"
           <th>Shape</th>
           <th>Duration</th>
           <th>Comments</th>
+
         </tr>
       </thead>
+
       <tbody></tbody>
+
     </table>
+
   </div>
+
+<script src="https://cdnjs.cloudFlare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
+</body>
+</html>
